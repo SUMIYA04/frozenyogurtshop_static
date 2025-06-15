@@ -1,0 +1,576 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    border: none;
+    width: 100%;
+    height: 10vh;
+    background-color: #eeebec;
+    display: flex;
+}
+
+.header .logo {
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+flex-wrap: wrap;
+}
+
+.header img {
+    height: 50%;
+}
+
+.header .links {
+    width: 70%;
+    height: 100%;
+
+}
+
+
+.header ul {
+
+    height: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.header a {
+    text-decoration: none;
+    font-family: sans-serif;
+
+    color: grey;
+}
+
+.header a:hover,
+.container a:hover {
+    color: #c8c10d;
+}
+
+.header .active {
+    color: #cb3362;
+}
+
+.underlinks{
+
+    display: none;
+ 
+}
+li:hover .underlinks{
+    display: block;
+    color: #c8c10d;
+}
+/* -----------------------------------------main section------------------- */
+.bg-img {
+    /* to apply absolute to child we must and should use relative to parent */
+    width: 100%;
+    height: 100vh;
+    background: url('../Asserts/images/bg-home.jpg') no-repeat center/cover;
+    position: relative;
+}
+
+.bg-img .circle {
+    width: 130px;
+    height: 130px;
+    border: none;
+    border-radius: 50%;
+    background-color: #cb3362;
+    position: absolute;
+    bottom: 10vh;
+    right: 23vw;
+    flex-wrap: wrap;
+    box-shadow: -10px 10px #c8c10d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/* ---------------------------------------------------container------------------- */
+
+.container {
+    width: 100%;
+    height: 40vh;
+    background-color: #eeebec;
+    display: flex;
+}
+
+
+.container .text-box {
+    width: 60%;
+    height: 100%;
+    /* background-color: yellowgreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .text {
+    height: 70%;
+    width: 70%;
+    color: gray;
+    /* background: #a84242; */
+}
+
+.container .img-box {
+    width: 40%;
+    height: 100%;
+
+}
+
+.container img {
+    height: 100%;
+}
+
+.container .text1 {
+    font-family: sans-serif;
+    font-weight: bold;
+
+}
+
+.container .text2 {
+    margin: 2vh 0;
+    font-family: sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+    color: #cb3362;
+    font-style: italic;
+}
+
+.container .text3 {
+    font-family: sans-serif;
+    font-size: 20px;
+
+}
+
+.container a {
+    color: gray;
+}
+
+
+/* ------------------------------------------footer1--------------------------
+
+*/
+
+
+.footer1 {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #c8c10d;
+}
+
+
+.footer1 .box {
+    width: 10vw;
+    height: 20vh;
+    /* background: #000; */
+}
+
+.footer1 img {
+    height: 10vh;
+}
+
+.footer1 P {
+    font-family: sans-serif;
+    font-weight: bold;
+    max-width: 2vw auto;
+    color: white;
+}
+
+/* -------------------------Footer2---------------------------------- */
+.footer2 {
+    width: 100%;
+    height: 40vh;
+    background-color: #cb3362;
+    position: relative;
+    /* top: 30x; */
+}
+
+.footer2 .box {
+    width: 50%;
+    height: 20vh;
+    /* background: lightcyan; */
+    /* margin: auto; */
+    position: absolute;
+    top: 10vh;
+
+    left: 25%;
+}
+
+.footer2 img{
+    height: 6vh;
+}
+
+.footer2 .images{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: auto;
+    width: 50%;
+}
+
+.footer2 .text{
+    text-align: center;
+    margin: 2vh auto;
+    font-family:sans-serif;
+    color: white;
+    font-size: small;
+}
+
+
+/* ----------------------------------------------ABOUT--------------------------------- */
+
+.about-heading{
+    height: 10vh;
+    background-color: #c8c10d;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.header-img{
+    height: 34vh;
+    /* background: url('../Asserts/images/bg-header-about.jpg') no-repeat ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eeebec;
+    flex-wrap: wrap;
+}
+.about-content{
+    /* margin-top: 2.1rem; */
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    height: 95vh;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    
+}
+.about-content-head{
+    background:whitesmoke;
+    width: 18rem;
+    text-align: center;
+    line-height: 2.6rem;
+    height: 75vh;
+   margin-left: 15rem;
+   margin-top: 2rem;
+}
+.about-content h1{
+    padding: 2rem 0;
+    text-transform: uppercase;
+   color: #cb3362;
+   font-family: sans-serif;
+}
+.about-content h1, .contact-map h1,.form h1,.msg h1{
+    color: #cb3362;
+}
+.about-content p, .contact-map p ,.msg p{
+    color: gray;
+}
+
+.about-content-head1{
+    margin-right: 15rem;
+    width: 40%;
+    padding-bottom: 2rem;
+}
+ a{
+    color: gray;
+}
+ a:hover{
+    color: #c8c10d;
+}
+/* ---------------------------------contact---------------------------- */
+.contact-map{
+    height: 34vh;
+    background-color: gray;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #000; */
+    /* background: url('https://maps.app.goo.gl/avwHXWbNBvZkUmer6'); */
+}
+.contact-map .loc{
+    width: 57%;
+    height: 13rem;
+    /* flex-wrap: wrap; */
+    display: flex;
+    background-color: white;
+    padding: 3rem 5rem;
+    /* border: 1px solid blue; */
+}
+.contact-place{
+    padding: 1rem 1.5rem;
+}
+.loc img{
+    width: 3.5rem;
+    height: 7rem;
+    margin-right: 1rem;
+}
+
+
+/* -----------------------------------------------inquiry------------------------ */
+
+
+.inqiry-form{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15rem;
+    flex-wrap: wrap;
+    /* gap: 1rem; */
+}
+.form{
+    margin-top: 4rem;
+    width: 40rem;
+margin-left: rem;
+}
+.form h1{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+.msg{
+    text-align: center;
+    width: 18rem;
+    height: 17rem;
+    margin-bottom: 5rem;
+    line-height: 2rem;
+    background-color: #eeebec;
+    /* margin-right: 0rem; */
+}
+input,textarea{
+    margin-bottom:.5rem;
+    width: 37Rem;
+    padding: 10px 40px 10px 5px;
+    /* line-height: 2rem; */
+}
+.form button{
+    color: gray;
+    padding: 10px 45px;
+    border: 1px solid gray;
+}
+.form button:hover{
+    background-color: #c8c10d;
+}
+.msg h1
+{
+    margin: 10px 10px;
+}
+
+.form a{
+    text-decoration: none;
+}
+/* ----------------------------blog---------------------------------------- */
+
+
+.blog{height: 150vh;
+    /* margin-right: 7rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.blog-inner{
+    margin:.5rem 2rem .5rem 0rem;
+}
+.blog p, small{
+   color: gray;
+}
+.blog p{
+    text-align: justify;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+}
+.blog h1{
+    margin-bottom: 1rem;
+    color: #cb3362;
+}
+.summer img ,.fruits img{
+    margin-right: 2rem;
+    margin-bottom: 10rem;
+}
+.content{
+    margin-top: 4rem;
+}
+.content button{
+    margin-bottom: 2rem;
+}
+.summer ,.fruits{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blog-inner{
+    width:43%;
+    height: 150vh;
+
+}
+
+.blog button{
+    background:white;
+    color: gray;
+    padding: 10px 45px;
+    border: 1px solid gray;
+}
+.blog button:hover{
+    /* color: #c8c10d; */
+    background-color: #c8c10d;
+    color: #eeebec;
+}
+.load{
+    margin-top: 2rem;
+}
+
+.post{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 83vh;
+    background-color: #eeebec;
+    /* text-align: center; */
+    margin-bottom: 22rem;
+}
+.post-inner p{
+    /* text-align: justify; */
+    text-align: center;
+}
+.post button{
+    background-color: #eeebec;
+}
+.blog a{
+    text-decoration: none;
+}
+
+/* ---------------------------------------------product------------------------------ */
+
+
+.products{
+    margin:4rem 0rem;
+}
+.pro-fruits{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.text-pro{
+    width: 17%;
+    height: 10vh;
+}
+.h1{
+    text-align: center;
+    color: #cb3362;
+}
+.products h1{
+    color: #cb3362;
+    margin-bottom: 1rem;
+}
+.products p{
+    line-height: 1.5rem;
+    color: gray;
+}
+
+/* ---------------------------------singlepost------------------------------------- */
+.single-post .post{
+height: 100vh;
+margin-top: 6.2rem;
+margin-left: 1rem;
+}
+.single-post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.single-img img{
+    margin-top: 5.9rem;
+    margin-bottom: 2rem;
+}
+
+.single-img{
+    width: 40%;
+   text-align: justify;
+   line-height:1.5rem;
+}
+.single-post button{
+    background:#eeebec;
+    color: gray;
+    padding: 10px 45px;
+    border: 1px solid gray;
+}
+.single-post button:hover{
+    /* color: #c8c10d; */
+    background-color: #c8c10d;
+    color: #eeebec;
+}
+.single-img button{
+   display: block;
+   margin: auto;
+   background-color: white;
+   /* margin-top: .5rem; */
+   color: gray;
+   border: 1px solid gray;
+   margin-bottom: 4.5rem;
+}
+.single-post h1{
+    margin-bottom: 1rem;
+}
+.single-img p,.post-inner p{
+    /* margin-bottom: 8.5rem; */
+    margin-top: 1.5rem;
+    color: gray;
+} 
+.post-inner p{
+    line-height: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  
+}
+.single-post h1{
+    color: #cb3362;
+}
+
+.single-post .post-inner{
+    margin-bottom: 6rem;
+}
+
+
+.single-post .post-inner img{
+    margin-bottom: 1rem;
+}
+.single-post .post-inner button{
+    margin-top: 3rem;
+}
+
+.single-post a{
+    text-decoration: none;
+}
+
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Frozen</title>
+  <!-- ✅ Fixed CSS path typo -->
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <link rel="stylesheet" href="../styles/responsive.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">
+      <a href="../index.html"><img src="../Asserts/images/logo.png" alt="Logo" /></a>
+    </div>
+    <div class="links">
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li>
+          <a href="./about.html">ABOUT</a>
+          <ul>
+            <li><a href="./product.html" class="underlinks">PRODUCT</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="./blog.html">BLOG</a>
+          <ul>
+            <li><a href="./singlepost.html" class="underlinks">SINGLE POST</a></li>
+          </ul>
+        </li>
+        <li><a href="./contact.html" class="active">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Heading -->
+  <div class="about-heading">
+    <h1>CONTACT</h1>
+  </div>
+
+  <!-- Contact Info -->
+  <div class="contact-map">
+    <div class="loc">
+      <img src="../Asserts/images/check-in.png" alt="Location Icon" />
+      <div class="contact-place">
+        <h1>UNIT 0123, ABC BUILDING, BUSINESS PARK</h1>
+        <p>
+          This website template has been designed by
+          <span><a href="#">Free Website Templates</a></span>
+          for you, for free. You can replace all this text with your own text.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Inquiry Form -->
+  <div class="inqiry-form">
+    <div class="form">
+      <h1>INQUIRY FORM</h1>
+      <!-- ✅ Form should eventually use method="POST" and action, for now it’s a static template -->
+      <form>
+        <input type="text" placeholder="Name" name="name" required />
+        <input type="email" placeholder="Email" name="email" required />
+        <input type="text" placeholder="Subject" name="subject" required />
+        <textarea name="thoughts" placeholder="Share your thoughts" rows="14" required></textarea>
+        <br />
+        <!-- ❌ Changed anchor tag inside button (bad practice) to a regular button -->
+        <button type="submit">SEND</button>
+      </form>
+    </div>
+    <div class="msg">
+      <h1>WE’D LOVE TO HEAR FROM YOU.</h1>
+      <p>
+        If you're having problems editing this website template,
+        then don't hesitate to ask for help on the
+        <span><a href="#">Forums</a></span>.
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer2">
+    <div class="box">
+      <div class="images">
+        <img src="../Asserts/images/facebook.png" alt="Facebook" />
+        <img src="../Asserts/images/twitter-sign.png" alt="Twitter" />
+        <img src="../Asserts/images/google-plus-logo.png" alt="Google Plus" />
+        <img src="../Asserts/images/pinterest.png" alt="Pinterest" />
+      </div>
+      <div class="text">
+        &copy;2025 shaik. All Rights Reserved.
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
